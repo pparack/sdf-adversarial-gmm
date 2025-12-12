@@ -9,6 +9,7 @@ Clean, reproducible code structure for **Soft-penalty Neural SDF** vs **Adversar
 Taeha Park (2025)
 
 - Working paper (preprint): PDF available upon request
+  (link to be added / arXiv submission in preparation)
 - Code repository: this GitHub repo
 
 ## Contribution
