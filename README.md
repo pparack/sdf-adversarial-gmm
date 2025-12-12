@@ -2,6 +2,21 @@
 
 Clean, reproducible code structure for **Soft-penalty Neural SDF** vs **Adversarial GMM SDF**.
 
+## Paper
+
+**Learning the Stochastic Discount Factor via Adversarial GMM**
+
+Taeha Park (2025)
+
+- Working paper (preprint): PDF available upon request
+- Code repository: this GitHub repo
+
+## Contribution
+
+- Implements and compares Soft-penalty Neural SDF and Adversarial GMM SDF within a unified, reproducible framework.
+- Interprets the adversarial critic as selecting worst-case pricing-error directions, providing a structural link between adversarial learning and optimal GMM instruments.
+- Documents how adversarial moment selection affects SDF volatility, identification, and macro–firm risk decomposition.
+
 ## Folder structure
 - `src/` : reusable Python modules (models, training, preprocessing)
 - `notebooks/` : your main run notebook (optional)
