@@ -1,44 +1,42 @@
 # sdf-adversarial-gmm
 
-Clean, reproducible code structure for **Soft-penalty Neural SDF** vs **Adversarial GMM SDF**.
+Clean, reproducible codebase for comparing Soft-Penalty Neural SDFs and Adversarial GMM SDFs in asset pricing.
+
+---
 
 ## Paper
 
-**Learning the Stochastic Discount Factor via Adversarial GMM**
+Soft-Penalty Neural SDFs vs. Adversarial GMM:  
+A Structural Comparison in Asset Pricing
 
 Taeha Park (2025)
 
-- Working paper (preprint): PDF available upon request
-  (link to be added / arXiv submission in preparation)
-- Code repository: this GitHub repo
+Paper (PDF): paper.pdf  
+arXiv: https://arxiv.org/abs/7098952
 
-## Contribution
+---
 
-- Implements and compares Soft-penalty Neural SDF and Adversarial GMM SDF within a unified, reproducible framework.
-- Interprets the adversarial critic as selecting worst-case pricing-error directions, providing a structural link between adversarial learning and optimal GMM instruments.
-- Documents how adversarial moment selection affects SDF volatility, identification, and macro–firm risk decomposition.
+## Abstract
 
-## Folder structure
-- `src/` : reusable Python modules (models, training, preprocessing)
-- `notebooks/` : your main run notebook (optional)
-- `data/` : (ignored) put your parquet here locally
-- `results/` : (ignored) outputs, logs, figures
+This paper compares two neural approaches to estimating stochastic discount factors (SDFs) in asset pricing: 
+the widely used soft-penalty Neural SDF and an adversarial generalized method of moments (Adversarial GMM) formulation. 
+While the soft-penalty objective enforces the Euler equation only on average, the adversarial framework identifies 
+worst-case pricing-error directions through a critic network, closely mirroring optimal GMM instrumentation.
 
-## Quick start (local)
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+In controlled CCAPM simulations, both methods perform similarly. In contrast, empirical results using the 
+Open Asset Pricing dataset show that Adversarial GMM produces substantially lower SDF volatility and more 
+economically disciplined pricing behavior. The findings highlight the importance of adversarial moment 
+selection for robust and interpretable SDF estimation in high-dimensional asset markets.
 
-Put your parquet at:
-- `data/OpenAP_Macro.parquet.gzip`
+---
 
-Then run:
-```bash
-python scripts/run_empirical.py
-```
+## Key Contributions
 
-## Notes
-- This repo intentionally avoids absolute paths like `/Users/...`.
-- Large data files are excluded by `.gitignore`.
+- Implements Soft-Penalty Neural SDF and Adversarial GMM SDF within a unified and reproducible framework.
+- Interprets the adversarial critic as selecting worst-case pricing-error directions, providing a structural link to optimal GMM instruments.
+- Demonstrates how adversarial moment selection affects SDF volatility, identification, and macro–firm risk decomposition.
+- Provides both simulation and large-scale empirical evidence using the Open Asset Pricing dataset.
+
+---
+
+## Repository Structure
