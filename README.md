@@ -40,3 +40,25 @@ selection for robust and interpretable SDF estimation in high-dimensional asset 
 ---
 
 ## Repository Structure
+
+- `README.md`  
+  Project overview and usage instructions.
+
+- `requirements.txt`  
+  Python dependencies required to reproduce the experiments.
+
+- `scripts/`  
+  Entry-point scripts for running simulations and empirical analyses.
+
+- `src/`  
+  Core reusable modules for SDF models, adversarial GMM training, and data preprocessing.
+
+
+## Quick Start (Local)
+
+Create and activate a virtual environment:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
