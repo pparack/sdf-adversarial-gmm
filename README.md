@@ -62,3 +62,17 @@ Create and activate a virtual environment:
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+```
+
+Place the required data file at the following relative path
+(from the repository root):
+
+```text
+data/OpenAP_Macro.parquet.gzip
+```
+
+Run the empirical experiment from the repository root:
+
+```bash
+PYTHONPATH="$(pwd)" python scripts/run_empirical.py
+```
