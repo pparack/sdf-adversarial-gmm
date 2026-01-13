@@ -12,7 +12,7 @@ A Structural Comparison in Asset Pricing
 Taeha Park (2025)
 
 Paper (PDF): paper.pdf  
-arXiv: https://arxiv.org/abs/7098952
+Google Drive: https://drive.google.com/file/d/1TkSlRv1xs7hpJ1FJd7q4jJBywqqc64_o/view?usp=share_link
 
 ---
 
