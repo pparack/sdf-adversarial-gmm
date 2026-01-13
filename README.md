@@ -16,8 +16,8 @@ https://drive.google.com/file/d/1TkSlRv1xs7hpJ1FJd7q4jJBywqqc64_o/view
 
 PDF (1-page summary):  
 https://drive.google.com/file/d/191jGbKBIzYwVYOEnvf0acBCgZjKvIGVe/view
----
 
+---
 ## Abstract
 
 This paper compares two neural approaches to estimating stochastic discount factors (SDFs) in asset pricing: 
